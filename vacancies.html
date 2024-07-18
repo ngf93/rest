@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Osteria Mario</title>
+</head>
+<body>
+    <header>
+        <nav class="container h-100">
+            <ul class="list-unstyled h-100 d-flex justify-content-between align-items-center">
+                <li class="d-none d-lg-block">
+                    <a href="menu.html">Меню</a>
+                </li>
+                <li class="d-none d-lg-block">
+                    <a href="vacancies.html">Работа у нас</a>
+                </li>
+                <li>
+                    <a href="index.html" class="site-title">Osteria Mario</a>
+                </li>
+                <li class="d-none d-lg-flex align-items-center">
+                    <span>Мы в соцсетях:</span>
+                    <a class="social" target="_blank" href="https://vk.com/osteriamario">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M484.7 132c3.56-11.28 0-19.48-15.75-19.48h-52.37c-13.21 0-19.31 7.18-22.87 14.86 0 0-26.94 65.6-64.56 108.13-12.2 12.3-17.79 16.4-24.4 16.4-3.56 0-8.14-4.1-8.14-15.37V131.47c0-13.32-4.06-19.47-15.25-19.47H199c-8.14 0-13.22 6.15-13.22 12.3 0 12.81 18.81 15.89 20.84 51.76V254c0 16.91-3 20-9.66 20-17.79 0-61-66.11-86.92-141.44C105 117.64 99.88 112 86.66 112H33.79C18.54 112 16 119.17 16 126.86c0 13.84 17.79 83.53 82.86 175.77 43.21 63 104.72 96.86 160.13 96.86 33.56 0 37.62-7.69 37.62-20.5v-47.66c0-15.37 3.05-17.93 13.73-17.93 7.62 0 21.35 4.09 52.36 34.33C398.28 383.6 404.38 400 424.21 400h52.36c15.25 0 22.37-7.69 18.3-22.55-4.57-14.86-21.86-36.38-44.23-62-12.2-14.34-30.5-30.23-36.09-37.92-7.62-10.25-5.59-14.35 0-23.57-.51 0 63.55-91.22 70.15-122"></path></svg>
+                    </a>
+                    <a class="social" target="_blank" href="https://t.me/tigrusholding">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.22 5.093L4.432 10.795c-1.009.405-1.003.968-.183 1.219l3.686 1.151 1.412 4.326c.171.473.087.661.584.661.384 0 .553-.175.768-.384.136-.132.942-.918 1.844-1.793l3.835 2.834c.706.39 1.216.188 1.391-.655L20.29 6.288c.257-1.033-.395-1.502-1.07-1.195zM8.514 12.9l8.312-5.243c.415-.253.796-.117.483.16l-7.117 6.422-.276 2.955L8.515 12.9z" fill="currentColor"></path></svg>
+                    </a>
+                </li>
+                <li>
+                    <button class="gamburger-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container py-4 py-sm-5">
+            <h1 class="text-center">Хотите у нас работать?</h1>
+            <p class="text-center fw-medium mb-4">Заполните форму и с вами свяжется наш Руководитель:</p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                    <form action="">
+                        <p>Ваше Имя:</p>
+                        <input type="text" class="form-control" placeholder="Ваше Имя">
+
+                        <p class="mt-3">Возраст:</p>
+                        <input type="number" class="form-control" placeholder="Возраст">
+
+                        <p class="mt-3">Пол:</p>
+                        <div class="d-flex">
+                            <label class="d-flex form-check-label">
+                                <input type="radio" class="form-check-input" required name="sex">
+                                <span class="ms-2">М</span>
+                            </label>
+                            <label class="d-flex form-check-label ms-5">
+                                <input type="radio" class="form-check-input" required name="sex">
+                                <span class="ms-2">Ж</span>
+                            </label>
+                        </div>
+
+                        <p class="mt-3">Телефон для связи:</p>
+                        <input type="tel" required class="form-control" placeholder="Телефон для связи ">
+                        
+                        <p class="mt-3">Резюме (*необязательно):</p>
+                        <input class="form-control" type="file" id="formFile">
+        
+                        <p class="mt-3">Выберите город, в котором вам нужна работа</p>
+                        <select class="form-select" required>
+                            <option selected disabled>Выберите место</option>
+                            <option value="">МОСКВА</option>
+                            <option value="">ТОЛЬЯТТИ</option>
+                            <option value="">КАЗАНЬ</option>
+                            <option value="">РЕСПУБЛИКА САХА (ЯКУТИЯ)</option>
+                            <option value="">ДУШАНБЕ</option>
+                            <option value="">ДУБАИ</option>
+                        </select>
+
+                        <p class="mt-3">Можете оставить дополнительную информацию о себе (*необязательно):</p>
+                        <textarea class="form-control" rows="3" placeholder="Информация о себе"></textarea>
+                        
+                        <button type="submit" class="btn-fill w-100 mt-3">Отправить </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container d-flex align-items-center justify-content-between h-100">
+            <div><a href="index.html" class="site-title">Osteria Mario</a></div>
+            <div class="d-flex align-items-center">
+                <a class="social" target="_blank" href="https://vk.com/osteriamario">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M484.7 132c3.56-11.28 0-19.48-15.75-19.48h-52.37c-13.21 0-19.31 7.18-22.87 14.86 0 0-26.94 65.6-64.56 108.13-12.2 12.3-17.79 16.4-24.4 16.4-3.56 0-8.14-4.1-8.14-15.37V131.47c0-13.32-4.06-19.47-15.25-19.47H199c-8.14 0-13.22 6.15-13.22 12.3 0 12.81 18.81 15.89 20.84 51.76V254c0 16.91-3 20-9.66 20-17.79 0-61-66.11-86.92-141.44C105 117.64 99.88 112 86.66 112H33.79C18.54 112 16 119.17 16 126.86c0 13.84 17.79 83.53 82.86 175.77 43.21 63 104.72 96.86 160.13 96.86 33.56 0 37.62-7.69 37.62-20.5v-47.66c0-15.37 3.05-17.93 13.73-17.93 7.62 0 21.35 4.09 52.36 34.33C398.28 383.6 404.38 400 424.21 400h52.36c15.25 0 22.37-7.69 18.3-22.55-4.57-14.86-21.86-36.38-44.23-62-12.2-14.34-30.5-30.23-36.09-37.92-7.62-10.25-5.59-14.35 0-23.57-.51 0 63.55-91.22 70.15-122"></path></svg>
+                </a>
+                <a class="social" target="_blank" href="https://t.me/tigrusholding">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.22 5.093L4.432 10.795c-1.009.405-1.003.968-.183 1.219l3.686 1.151 1.412 4.326c.171.473.087.661.584.661.384 0 .553-.175.768-.384.136-.132.942-.918 1.844-1.793l3.835 2.834c.706.39 1.216.188 1.391-.655L20.29 6.288c.257-1.033-.395-1.502-1.07-1.195zM8.514 12.9l8.312-5.243c.415-.253.796-.117.483.16l-7.117 6.422-.276 2.955L8.515 12.9z" fill="currentColor"></path></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+        <button type="button" class="offcanvas-close" data-bs-dismiss="offcanvas">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368 144 144m224 0L144 368"></path></svg>
+        </button>
+        <div class="offcanvas-body p-5">
+            <nav class="h-100 d-flex flex-column justify-content-between align-items-start">
+                <ul class="list-unstyled">
+                    <li><a href="restaurants.html">Наши рестораны</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="vacancies.html">Работа у нас</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a class="social" target="_blank" href="https://vk.com/osteriamario">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M484.7 132c3.56-11.28 0-19.48-15.75-19.48h-52.37c-13.21 0-19.31 7.18-22.87 14.86 0 0-26.94 65.6-64.56 108.13-12.2 12.3-17.79 16.4-24.4 16.4-3.56 0-8.14-4.1-8.14-15.37V131.47c0-13.32-4.06-19.47-15.25-19.47H199c-8.14 0-13.22 6.15-13.22 12.3 0 12.81 18.81 15.89 20.84 51.76V254c0 16.91-3 20-9.66 20-17.79 0-61-66.11-86.92-141.44C105 117.64 99.88 112 86.66 112H33.79C18.54 112 16 119.17 16 126.86c0 13.84 17.79 83.53 82.86 175.77 43.21 63 104.72 96.86 160.13 96.86 33.56 0 37.62-7.69 37.62-20.5v-47.66c0-15.37 3.05-17.93 13.73-17.93 7.62 0 21.35 4.09 52.36 34.33C398.28 383.6 404.38 400 424.21 400h52.36c15.25 0 22.37-7.69 18.3-22.55-4.57-14.86-21.86-36.38-44.23-62-12.2-14.34-30.5-30.23-36.09-37.92-7.62-10.25-5.59-14.35 0-23.57-.51 0 63.55-91.22 70.15-122"></path></svg>
+                    </a>
+                    <a class="social" target="_blank" href="https://t.me/tigrusholding">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.22 5.093L4.432 10.795c-1.009.405-1.003.968-.183 1.219l3.686 1.151 1.412 4.326c.171.473.087.661.584.661.384 0 .553-.175.768-.384.136-.132.942-.918 1.844-1.793l3.835 2.834c.706.39 1.216.188 1.391-.655L20.29 6.288c.257-1.033-.395-1.502-1.07-1.195zM8.514 12.9l8.312-5.243c.415-.253.796-.117.483.16l-7.117 6.422-.276 2.955L8.515 12.9z" fill="currentColor"></path></svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

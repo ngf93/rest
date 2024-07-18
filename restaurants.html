@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Osteria Mario</title>
+</head>
+<body>
+    <header>
+        <nav class="container h-100">
+            <ul class="list-unstyled h-100 d-flex justify-content-between align-items-center">
+                <li class="d-none d-lg-block">
+                    <a href="menu.html">Меню</a>
+                </li>
+                <li class="d-none d-lg-block">
+                    <a href="vacancies.html">Работа у нас</a>
+                </li>
+                <li>
+                    <a href="index.html" class="site-title">Osteria Mario</a>
+                </li>
+                <li class="d-none d-lg-flex align-items-center">
+                    <span>Мы в соцсетях:</span>
+                    <a class="social" target="_blank" href="https://vk.com/osteriamario">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M484.7 132c3.56-11.28 0-19.48-15.75-19.48h-52.37c-13.21 0-19.31 7.18-22.87 14.86 0 0-26.94 65.6-64.56 108.13-12.2 12.3-17.79 16.4-24.4 16.4-3.56 0-8.14-4.1-8.14-15.37V131.47c0-13.32-4.06-19.47-15.25-19.47H199c-8.14 0-13.22 6.15-13.22 12.3 0 12.81 18.81 15.89 20.84 51.76V254c0 16.91-3 20-9.66 20-17.79 0-61-66.11-86.92-141.44C105 117.64 99.88 112 86.66 112H33.79C18.54 112 16 119.17 16 126.86c0 13.84 17.79 83.53 82.86 175.77 43.21 63 104.72 96.86 160.13 96.86 33.56 0 37.62-7.69 37.62-20.5v-47.66c0-15.37 3.05-17.93 13.73-17.93 7.62 0 21.35 4.09 52.36 34.33C398.28 383.6 404.38 400 424.21 400h52.36c15.25 0 22.37-7.69 18.3-22.55-4.57-14.86-21.86-36.38-44.23-62-12.2-14.34-30.5-30.23-36.09-37.92-7.62-10.25-5.59-14.35 0-23.57-.51 0 63.55-91.22 70.15-122"></path></svg>
+                    </a>
+                    <a class="social" target="_blank" href="https://t.me/tigrusholding">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.22 5.093L4.432 10.795c-1.009.405-1.003.968-.183 1.219l3.686 1.151 1.412 4.326c.171.473.087.661.584.661.384 0 .553-.175.768-.384.136-.132.942-.918 1.844-1.793l3.835 2.834c.706.39 1.216.188 1.391-.655L20.29 6.288c.257-1.033-.395-1.502-1.07-1.195zM8.514 12.9l8.312-5.243c.415-.253.796-.117.483.16l-7.117 6.422-.276 2.955L8.515 12.9z" fill="currentColor"></path></svg>
+                    </a>
+                </li>
+                <li>
+                    <button class="gamburger-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sec-restaurants container py-5">
+            <h1 class="text-center">Рестораны Osteria Mario</h1>
+            <h3>МОСКВА</h3>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gx-4 gy-4 gy-sm-5 mb-5">
+                <div>
+                    <h4>ТЦ «Охотный Ряд»</h4>
+                    <address>Москва, Манежная пл., д.1 с.2, ТЦ «Охотный Ряд» нижний уровень</address>
+                    <p>
+                        <a href="tel:+74957907090">
+                            <img src="imgs/phone.svg" alt="phone">
+                            <span class="ms-1">+7(495) 790-70-90 доб. 201</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://wa.me/79663714451">
+                            <img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span>
+                        </a>
+                    </p>
+                    <p>Ежедневно 10:00–22:00</p>
+                    <p>Завтраки ежедневно 10:00–12:00</p>
+                    <p>20% скидка по будням с 12:00 до 16:00</p>
+                </div>
+                <div>
+                    <h4>ТЦ «Метрополис»</h4>
+                    <address>Москва, Ленинградское ш., 16А стр.4, ТЦ «Метрополис», 4-й этаж</address>
+                    <p><a href="tel:+74957907090"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7(495) 790-70-90 доб. 203</span></a></p>
+                    <p><a href="https://wa.me/79663714472"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 11:30–23:00</p>
+                    <p>Завтраки ежедневно 11:30–12:00</p>
+                </div>
+                <div>
+                    <h4>ТЦ «Афимолл»</h4>
+                    <address>Москва, Пресненская наб., д. 2, ТЦ «Афимолл», 5 этаж</address>
+                    <p><a href="tel:+7(495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7(495) 790-70-90 доб. 204</span></a></p>
+                    <p><a href="https://wa.me/79663714462"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Вс–Чт 10:00–22:00</p>
+                    <p>Пт, Сб 10:00–23:00</p>
+                    <p>Завтраки ежедневно 10:00–12:00</p>
+                </div>
+                <div>
+                    <h4>ТРК VEGAS Кунцево</h4>
+                    <address>ТРК VEGAS Кунцево, 56-й км МКАД</address>
+                    <p><a href="tel:+7(495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7(495) 790-70-90 доб. 205</span></a></p>
+                    <p><a href="https://wa.me/79663714461"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Пн-Чт, Вс 10:00–22:00</p>
+                    <p>Пт, Сб 10:00–23:00</p>
+                    <p>Завтраки ежедневно 10:00–12:00</p>
+                </div>
+                <div>
+                    <h4>на Соколе</h4>
+                    <address>Москва, Балтийская улица, д. 9</address>
+                    <p><a href="tel:+7(495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7(495) 790-70-90 доб. 206</span></a></p>
+                    <p><a href="https://wa.me/79686811866"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 10:00-23:00</p>
+                    <p>Завтраки по будням 10:00–12:00</p>
+                    <p>Завтраки по выходным 10:00–14:00</p>
+                    <p>20% скидка по будням 12:00-16:00</p>
+                </div>
+                <div>
+                    <h4>Мега Химки</h4>
+                    <address>Химки, Мега Химки, 2-й этаж</address>
+                    <p><a href="tel:+7(495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7(495) 790-70-90 доб. 207</span></a></p>
+                    <p><a href=""><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Пн–Чт 11:00–23:00</p>
+                    <p>Пт 11:00–00:00</p>
+                    <p>Сб–Вс 10:00–00:00</p>
+                </div>
+                <div>
+                    <h4>БЦ «Ситидел»</h4>
+                    <address>Москва, ул. Земляной Вал, 9, БЦ «Ситидел»</address>
+                    <p><a href="tel:+7(495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7(495) 790-70-90 доб. 208</span></a></p>
+                    <p><a href=""><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Пн-Пт 10:00-23:00</p>
+                    <p>Сб, Вс 12:00-23:00</p>
+                    <p>Завтраки по будням 10:00–12:00</p>
+                    <p>Ланчи по будням 12:00–16:00</p>
+                </div>
+                <div>
+                    <h4>ТЦ «МЕГА Теплый Стан»</h4>
+                    <address>Москва, с. Сосенское, Калужское ш., 21-й км, ТЦ «МЕГА Теплый Стан»</address>
+                    <p><a href="tel:+7(495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7(495) 790-70-90 доб. 210</span></a></p>
+                    <p><a href=""><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 10:00-22:00</p>
+                    <p>Завтраки ежедневно 10:00–12:00</p>
+                </div>
+                <div>
+                    <h4>ТРЦ «Капитолий»</h4>
+                    <address>Москва, пр-т Вернадского, дом 6, ТРЦ «Капитолий», 3 этаж</address>
+                    <p><a href="tel:+7(495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7(495) 790-70-90 доб. 211</span></a></p>
+                    <p><a href="https://wa.me/79645083758"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Вс-Чт 10:00-22:00</p>
+                    <p>Пт, Сб 10:00-23:00</p>
+                    <p>Завтраки ежедневно 10:00–12:00</p>
+                </div>
+                <div>
+                    <h4>ТЦ «Каширская плаза»</h4>
+                    <address>Москва, Каширское шоссе, д. 61, к. 2</address>
+                    <p><a href="tel:+7(495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7(495) 790-70-90 доб. 212</span></a></p>
+                    <p><a href="https://wa.me/79645077584"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 10:00-22:00</p>
+                    <p>Среда 16:00-17:00 кулинарные мастер-классы для детей (по предзаписи)</p>
+                    <p>Сб, Вс 13:00-20:00 детские мастер-классы</p>
+                </div>
+                <div>
+                    <h4>ТЦ «МЕГА Белая дача»</h4>
+                    <address>1-й Покровский проезд, д. 5</address>
+                    <p><a href="tel:+7(495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7(495) 790-70-90 доб. 213</span></a></p>
+                    <p><a href="https://wa.me/79645083960"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 10:00-23:00</p>
+                    <p>Завтраки ежедневно 10:00–12:00</p>
+                </div>
+                <div>
+                    <h4>ЦДМ на Лубянке</h4>
+                    <address>Москва, Театральный проезд, д. 5, стр. 1, 4й этаж</address>
+                    <p><a href="tel:+7(495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7(495) 790-70-90 доб. 214</span></a></p>
+                    <p><a href="https://wa.me/79645081200"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 10:00-22:00</p>
+                    <p>Завтраки ежедневно 10:00–12:00</p>
+                </div>
+                <div>
+                    <h4>ТРЦ «Саларис»</h4>
+                    <address>23-й км, Киевское ш., д. 1, 2 этаж</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790-70-90 доб. 215</span></a></p>
+                    <p><a href="https://wa.me/79663711738"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 10:00–22:00</p>
+                    <p>Завтраки ежедневно 10:00–12:00</p>
+                </div>
+                <div>
+                    <h4>ТРК «Красный кит»</h4>
+                    <address>Шараповский проезд, д. 2 , г. Мытищи</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790-70-90 доб. 216</span></a></p>
+                    <p><a href="https://wa.me/79663711737"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 10:00–23:00</p>
+                    <p>20% скидка по будням с 12:00 до 16:00</p>
+                    <p>ПТ-ВС с 14:00 до 20:00 детские мастер-классы</p>
+                </div>
+                <div>
+                    <h4>БЦ «Академик»</h4>
+                    <address>г. Москва, Проспект Вернадского, вл.41</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790-70-90 доб. 217</span></a></p>
+                    <p><a href="https://wa.me/79663714465"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 10:00-23:00</p>
+                </div>
+                <div>
+                    <h4>на Мичуринском</h4>
+                    <address>г. Москва, Мичуринский проспект, д. 3</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790-70-90 доб. 218</span></a></p>
+                    <p><a href="https://wa.me/79688996295"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 10:00–23:00</p>
+                    <p>Завтраки по будням 10:00–12:00</p>
+                    <p>Завтраки по выходным 10:00–13:00</p>
+                </div>
+                <div>
+                    <h4>ТРЦ «Европейский»</h4>
+                    <address>г. Москва, площадь Киевского вокзала, д. 2, 3 этаж, Атриум «Париж»</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790-70-90 доб. 219</span></a></p>
+                    <p><a href="https://wa.me/79169379533"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Вс-Чт 10:00-22:00</p>
+                    <p>Пт-Сб 10:00-23:00</p>
+                    <p>Завтраки ежедневно 10:00–12:00</p>
+                </div>
+                <div>
+                    <h4>на Пятницкой</h4>
+                    <address>г. Москва, Пятницкая ул., 25, стр. 1Д</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790-70-90 доб. 200</span></a></p>
+                    <p><a href="https://wa.me/79645082495"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Вс-Чт 10:00-00:00</p>
+                    <p>Пт-Сб 10:00-00:30</p>
+                    <p>Завтраки ежедневно 10:00–12:00</p>
+                    <p>20% скидка по будням с 12:00 до 16:00</p>
+                </div>
+                <div>
+                    <h4>на Баррикадной</h4>
+                    <address>г. Москва, ул. Баррикадная, д.21/34с3</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790-70-90 доб. 209</span></a></p>
+                    <p><a href="https://wa.me/79663711702"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 11:00-23:00</p>
+                    <p>Сб-Вс с 13:00 до 20:00: Детский аниматор</p>
+                    <p>Воскресенье с 13:00 до 14:00: Кулинарные мастер-классы</p>
+                    <p>Летняя веранда</p>
+                </div>
+                <div>
+                    <h4>на Калужской</h4>
+                    <address>г. Москва, Профсоюзная ул., 61 стр. 1</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790-70-90 доб. 221</span></a></p>
+                    <p><a href="https://wa.me/79671267696"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 12:00-23:00</p>
+                </div>
+                <div>
+                    <h4>ТЦ «Кунцево Плаза»</h4>
+                    <address>г. Москва, Ярцевская ул., 19</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790-70-90 доб. 220</span></a></p>
+                    <p><a href="https://wa.me/79683696533"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Вс-Чт 10:00-22:00</p>
+                    <p>Пт-Сб 10:00-23:00</p>
+                </div>
+                <div>
+                    <h4>ТРЦ «Павелецкая Плаза»</h4>
+                    <address>г. Москва, Павелецкая площадь, д.3, -3 этаж</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790-70-90 доб. 222</span></a></p>
+                    <p><a href="https://wa.me/79259291197"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 10:00-22:00</p>
+                </div>
+                <div>
+                    <h4>ТРЦ «Щёлковский»</h4>
+                    <address>г. Москва, Щёлковское ш., владение 75, 3 этаж</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790-70-90 доб. 223</span></a></p>
+                    <p><a href="https://wa.me/79166684660"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Вс-Чт 10:00-22:00</p>
+                    <p>Пт-Сб 10:00-23:00</p>
+                </div>
+                <div>
+                    <h4>ТЦ Vegas Крокус</h4>
+                    <address>г. Красногорск, ул. Международная 12, ТЦ Vegas Крокус Сити, 2 этаж</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790-70-90 доб. 202</span></a></p>
+                    <p><a href="https://wa.me/79037207148"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Вс-Чт 10:00-22:00</p>
+                    <p>Пт-Сб 10:00-23:00</p>
+                </div>
+                <div>
+                    <h4>ТЦ «Байконур»</h4>
+                    <address>г. Москва, ул. Декабристов 17, 4-й этаж</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790 70 90 доб. 224</span></a></p>
+                    <p><a href="https://wa.me/79660003507"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Вс-Чт 10:00-22:00</p>
+                    <p>Пт-Сб 10:00-23:00</p>
+                </div>
+                <div>
+                    <h4>Место встречи Киргизия</h4>
+                    <address>г. Москва, Зелёный проспект, д. 81</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790 70 90 доб. 226</span></a></p>
+                    <p><a href="https://wa.me/79683696504"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Вс-Чт 10:00-22:00</p>
+                    <p>Пт-Сб 10:00-23:00</p>
+                </div>
+                <div>
+                    <h4>ТРЦ «Сказка»</h4>
+                    <address>г. Москва, поселение Внуковское, улица Корнея Чуковского, д. 2, ТРЦ «Сказка»</address>
+                    <p><a href="tel:+7 (916) 281 88 23"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (916) 281 88 23</span></a></p>
+                    <p><a href="https://wa.me/79162818823"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 10:00-23:00</p>
+                </div>
+                <div>
+                    <h4>ТРЦ «АВИАПАРК»</h4>
+                    <address>г. Москва, Ходынский бульвар, д. 4, этаж 4</address>
+                    <p><a href="tel:+7 (495) 790-70-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (495) 790-70-90 доб. 227</span></a></p>
+                    <p><a href="https://wa.me/79151912861"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Вс-Чт 10:00-22:00</p>
+                    <p>Пт-Сб 10:00-23:00</p>
+                </div>
+                <div>
+                    <h4>ТРК «Европолис Ростокино»</h4>
+                    <address>г. Москва, ул. Проспект Мира 211к2 <br/>2 этаж (справа от кинотеатра)</address>
+                    <p><a href="tel:+7 (926) 346 22 16"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (926) 346 22 16</span></a></p>
+                    <p><a href="https://wa.me/79263462216"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 10:00-23:00</p>
+                </div>
+                <div>
+                    <h4>ТРЦ «Ривьера»</h4>
+                    <address>г. Москва, ул. Автозаводская, д.18 3 этаж</address>
+                    <p><a href="tel:+7 (926) 980-81-52"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (926) 980-81-52</span></a></p>
+                    <p><a href="https://wa.me/79269808152"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Вс-Чт 10:00-22:00</p>
+                    <p>Пт-Сб 10:00-23:00</p>
+                </div>
+                <div>
+                    <h4>БП «Румянцево»</h4>
+                    <address>Москва, поселение Московский, Киевское шоссе, 22-й километр, 4, стр. 1, корп. Б</address>
+                    <p><a href="tel:+7 (925) 085-77-60"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (925) 085-77-60</span></a></p>
+                    <p><a href="https://wa.me/79250857760"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 9:00-22:00</p>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gx-4 gy-4 gy-sm-5 mb-5">
+                <div>
+                    <h3>ТОЛЬЯТТИ</h3>
+                    <address>г. Тольятти, Приморский бульвар, 43</address>
+                    <p><a href="tel:+7 (848) 271-90-70"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (848) 271-90-70</span></a></p>
+                    <p><a href="https://wa.me/79033310070"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                </div>
+                <div>
+                    <h3>КАЗАНЬ</h3>
+                    <address>г. Казань, проспект Победы, 141, ТЦ «Мега»</address>
+                    <p><a href="tel:+7 (843) 240-56-90"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (843) 240-56-90</span></a></p>
+                    <p><a href="https://wa.me/79656183987"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                </div>
+                <div>
+                    <h3>РЕСПУБЛИКА САХА (ЯКУТИЯ)</h3>
+                    <address>г.Якутск, Проспект Ленина, д.24, 1-й этаж отеля «Азимут»</address>
+                    <p><a href="tel:+7 (914) 275-65-85"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+7 (914) 275-65-85</span></a></p>
+                    <p><a href="https://wa.me/79142756585"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                </div>
+                <div>
+                    <h3>ДУШАНБЕ</h3>
+                    <address>г. Душанбе, просп. Рудаки, 55</address>
+                    <p><a href="tel:+992 00 033 0000"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+992 00 033 0000</span></a></p>
+                    <p><a href="https://wa.me/992000330000"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Ежедневно 8:00-23:00</p>
+                </div>
+                <div>
+                    <h3>ДУБАИ</h3>
+                    <h4>ТЦ «Dubai Hills Mall»</h4>
+                    <address>Первый этаж, Ближайшая парковка: Рестораны P1 — Park</address>
+                    <p><a href="tel:+971 52 929 20 88"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+971 52 929 20 88</span></a></p>
+                    <p><a href="https://wa.me/971529292088"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                    <p>Вс-Чт 10:00-00:00</p>
+                    <p>Пт-Сб 10:00-01:00</p>
+
+                    <h4 class="mt-3">ТЦ «Marina Moon Tower»</h4>
+                    <p><a href="tel:+971 58 562 5251"><img src="imgs/phone.svg" alt="phone">
+                        <span class="ms-1">+971 58 562 5251</span></a></p>
+                    <p><a href="https://wa.me/971585625251"><img src="imgs/whatsapp.svg" alt="whatsapp">
+                            <span class="ms-1">Связаться по WhatsApp</span></a></p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h3>Скоро открытие новых Ресторанов в следующих городах: </h3>
+                <ul>
+                    <li>Саранск</li>
+                    <li>Тамбов</li>
+                    <li>Саратов</li>
+                    <li>Белгород</li>
+                    <li>Пермь</li>
+                    <li>Иваново</li>
+                    <li>Брянск</li>
+                    <li>Ростов на Дону</li>
+                    <li>Воронеж</li>
+                    <li>Пенза</li>
+                    <li>Набережные Челны</li>
+                    <li>Красноярск</li>
+                    <li>Нижний Новгород </li>
+                    <li>Самара</li>
+                    <li>Челябинск</li>
+                    <li>Йошкар-Ола</li>
+                    <li>Курган</li>
+                    <li>Горно-Алтайск</li>
+                    <li>Барнаул</li>
+                    <li>Великий Новгород</li>
+                    <li>Боровичи</li>
+                    <li>Оренбург</li>
+                    <li>Калуга</li>
+                    <li>Хабаровск</li>
+                    <li>Благовещенск</li>
+                    <li>Ярославль</li>
+                    <li>Ижевск</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container d-flex align-items-center justify-content-between h-100">
+            <div><a href="index.html" class="site-title">Osteria Mario</a></div>
+            <div class="d-flex align-items-center">
+                <a class="social" target="_blank" href="https://vk.com/osteriamario">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M484.7 132c3.56-11.28 0-19.48-15.75-19.48h-52.37c-13.21 0-19.31 7.18-22.87 14.86 0 0-26.94 65.6-64.56 108.13-12.2 12.3-17.79 16.4-24.4 16.4-3.56 0-8.14-4.1-8.14-15.37V131.47c0-13.32-4.06-19.47-15.25-19.47H199c-8.14 0-13.22 6.15-13.22 12.3 0 12.81 18.81 15.89 20.84 51.76V254c0 16.91-3 20-9.66 20-17.79 0-61-66.11-86.92-141.44C105 117.64 99.88 112 86.66 112H33.79C18.54 112 16 119.17 16 126.86c0 13.84 17.79 83.53 82.86 175.77 43.21 63 104.72 96.86 160.13 96.86 33.56 0 37.62-7.69 37.62-20.5v-47.66c0-15.37 3.05-17.93 13.73-17.93 7.62 0 21.35 4.09 52.36 34.33C398.28 383.6 404.38 400 424.21 400h52.36c15.25 0 22.37-7.69 18.3-22.55-4.57-14.86-21.86-36.38-44.23-62-12.2-14.34-30.5-30.23-36.09-37.92-7.62-10.25-5.59-14.35 0-23.57-.51 0 63.55-91.22 70.15-122"></path></svg>
+                </a>
+                <a class="social" target="_blank" href="https://t.me/tigrusholding">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.22 5.093L4.432 10.795c-1.009.405-1.003.968-.183 1.219l3.686 1.151 1.412 4.326c.171.473.087.661.584.661.384 0 .553-.175.768-.384.136-.132.942-.918 1.844-1.793l3.835 2.834c.706.39 1.216.188 1.391-.655L20.29 6.288c.257-1.033-.395-1.502-1.07-1.195zM8.514 12.9l8.312-5.243c.415-.253.796-.117.483.16l-7.117 6.422-.276 2.955L8.515 12.9z" fill="currentColor"></path></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+        <button type="button" class="offcanvas-close" data-bs-dismiss="offcanvas">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368 144 144m224 0L144 368"></path></svg>
+        </button>
+        <div class="offcanvas-body p-5">
+            <nav class="h-100 d-flex flex-column justify-content-between align-items-start">
+                <ul class="list-unstyled">
+                    <li><a href="restaurants.html">Наши рестораны</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="vacancies.html">Работа у нас</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a class="social" target="_blank" href="https://vk.com/osteriamario">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M484.7 132c3.56-11.28 0-19.48-15.75-19.48h-52.37c-13.21 0-19.31 7.18-22.87 14.86 0 0-26.94 65.6-64.56 108.13-12.2 12.3-17.79 16.4-24.4 16.4-3.56 0-8.14-4.1-8.14-15.37V131.47c0-13.32-4.06-19.47-15.25-19.47H199c-8.14 0-13.22 6.15-13.22 12.3 0 12.81 18.81 15.89 20.84 51.76V254c0 16.91-3 20-9.66 20-17.79 0-61-66.11-86.92-141.44C105 117.64 99.88 112 86.66 112H33.79C18.54 112 16 119.17 16 126.86c0 13.84 17.79 83.53 82.86 175.77 43.21 63 104.72 96.86 160.13 96.86 33.56 0 37.62-7.69 37.62-20.5v-47.66c0-15.37 3.05-17.93 13.73-17.93 7.62 0 21.35 4.09 52.36 34.33C398.28 383.6 404.38 400 424.21 400h52.36c15.25 0 22.37-7.69 18.3-22.55-4.57-14.86-21.86-36.38-44.23-62-12.2-14.34-30.5-30.23-36.09-37.92-7.62-10.25-5.59-14.35 0-23.57-.51 0 63.55-91.22 70.15-122"></path></svg>
+                    </a>
+                    <a class="social" target="_blank" href="https://t.me/tigrusholding">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.22 5.093L4.432 10.795c-1.009.405-1.003.968-.183 1.219l3.686 1.151 1.412 4.326c.171.473.087.661.584.661.384 0 .553-.175.768-.384.136-.132.942-.918 1.844-1.793l3.835 2.834c.706.39 1.216.188 1.391-.655L20.29 6.288c.257-1.033-.395-1.502-1.07-1.195zM8.514 12.9l8.312-5.243c.415-.253.796-.117.483.16l-7.117 6.422-.276 2.955L8.515 12.9z" fill="currentColor"></path></svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
