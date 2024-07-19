@@ -260,10 +260,28 @@ main {
 
 .sec-rest {
     background: url(../imgs/clouds.webp) no-repeat center top;
-    background-size: cover;
+    background-size: 100% auto;
     position: relative;
     padding-top: 1em;
     padding-bottom: 4em;
+    overflow: hidden;
+    @media (max-width:767px) {
+        background-position: center bottom;
+        padding-bottom: 9em;
+    }
+    .link {
+        color: inherit;
+        svg {
+            transform: translateX(0%);
+            transition: transform var(--transition);
+        }
+        &:hover, &:focus, &:active {
+            color: var(--main-color);
+            svg {
+                transform: translateX(30%);
+            }
+        }
+    }
     &::before {
         content: "";
         position: absolute;
@@ -273,6 +291,16 @@ main {
         width: 50%;
         background-color: var(--main-color);
         z-index: 1;
+        @media (max-width:767px) {
+            width: 510px;
+            top: 125px;
+            height: 300px;
+            right: 50%;
+            transform: translateX(55%);
+        }
+        @media (max-width:575px) {
+            content: unset;
+        }
     }
     .container {
         position: relative;
@@ -303,11 +331,11 @@ main {
                 color: #fff;
                 width: 2.5em;
                 height: 2.5em;
-                border: 2px solid #fff;
+                border: 2px solid currentColor;
                 border-radius: 50%;
                 @include flex(row, center, center, nowrap);
                 padding: .5em;
-                top: 0px;
+                top: 2em;
                 transition: var(--transition);
                 opacity: .8;
                 transition-property: opacity;
@@ -316,6 +344,10 @@ main {
                 }
                 &:hover, &:focus {
                     opacity: 1;
+                }
+                @media (max-width:767px) {
+                    color:var(--light-color);
+                    font-size: 14px;
                 }
             }
             .swiper-button-prev {
@@ -333,13 +365,20 @@ main {
         position: absolute;
         bottom: 0px;
         left: 0px;
-        height: 100%;
+        height: 80%;
         width: 30%;
         z-index: 10;
         background: url(../imgs/statue.webp) no-repeat left bottom;
         background-size: auto;
         @media (max-width: 1199.98px) {
             background-size: contain;
+        }
+        @media (max-width:767px) {
+            height: 50%;
+            width: 35%;
+        }
+        @media (max-width:575px) {
+            width: 50%;
         }
     }
 }
@@ -363,6 +402,10 @@ footer {
     .social {
         background-color: rgba(0,0,0,0.25);
         color: var(--light-color);
+        &:hover, &:focus, &:active {
+            color: var(--light-color);
+            background-color: rgba(0,0,0,0.35);
+        }
     }
 }
 
